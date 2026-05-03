@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Collection - Wishes&Cards</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Wishes<span style="color: var(--text-dark);">&</span>Cards</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="cards.html" style="color: var(--primary-color);">Cards</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-icons">
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="cart.html" style="color: var(--primary-color);">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-header" style="padding-top: 3rem;">
+        <h2>Our Greeting Cards Collection</h2>
+        <p>Find the perfect card for your loved ones.</p>
+    </section>
+
+    <!-- Category Filters -->
+    <div class="categories-filters">
+        <button class="category-btn active" data-category="all">All Cards</button>
+        <button class="category-btn" data-category="birthday">Birthday</button>
+        <button class="category-btn" data-category="love">Love</button>
+        <button class="category-btn" data-category="anniversary">Anniversary</button>
+        <button class="category-btn" data-category="festival">Festival</button>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="cards-grid" id="allCardsGrid">
+        <!-- Birthday Cards -->
+        <div class="card" data-id="card-1" data-category="birthday">
+            <img src="https://images.unsplash.com/photo-1530103862676-de8892ebeea0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Birthday Card" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Colorful Birthday</h3>
+                <p class="card-desc">A bright and colorful card to wish them the happiest of birthdays.</p>
+                <a href="#" class="btn btn-primary add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="card" data-id="card-2" data-category="birthday">
+            <img src="https://images.unsplash.com/photo-1558636508-e0db3814bd1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Birthday Card" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Cupcake Wishes</h3>
+                <p class="card-desc">Sweet cupcake wishes for a sweet person on their special day.</p>
+                <a href="#" class="btn btn-primary add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="card" data-id="card-3" data-category="birthday">
+            <img src="https://images.unsplash.com/photo-1602631985686-1bb0e9a8696e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Birthday Card" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Balloon Bonanza</h3>
+                <p class="card-desc">Let the celebrations begin with this festive balloon card.</p>
+                <a href="#" class="btn btn-primary add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- Love Cards -->
+        <div class="card" data-id="card-4" data-category="love">
+            <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Love Card" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Classic Hearts</h3>
+                <p class="card-desc">Simple, elegant hearts to say "I love you" any day of the year.</p>
+                <a href="#" class="btn btn-primary add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="card" data-id="card-5" data-category="love">
+            <img src="https://images.unsplash.com/photo-1494774157365-9e04c6720e47?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Love Card" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Rose Bouquet</h3>
+                <p class="card-desc">Beautiful red roses that will never fade, just like your love.</p>
+                <a href="#" class="btn btn-primary add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- Anniversary Cards -->
+        <div class="card" data-id="card-6" data-category="anniversary">
+            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Anniversary Card" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Golden Years</h3>
+                <p class="card-desc">Celebrate a major milestone with this elegant golden anniversary card.</p>
+                <a href="#" class="btn btn-primary add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="card" data-id="card-7" data-category="anniversary">
+            <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Anniversary Card" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Together Forever</h3>
+                <p class="card-desc">A beautiful design celebrating your ongoing journey together.</p>
+                <a href="#" class="btn btn-primary add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- Festival Cards -->
+        <div class="card" data-id="card-8" data-category="festival">
+            <img src="https://images.unsplash.com/photo-1482517967863-00e15c9b44be?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Festival Card" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Holiday Sparkle</h3>
+                <p class="card-desc">Wishing them a sparkling and joyous holiday season.</p>
+                <a href="#" class="btn btn-primary add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="card" data-id="card-9" data-category="festival">
+            <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Festival Card" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Winter Wonderland</h3>
+                <p class="card-desc">Send warm wishes wrapped in a snowy winter wonderland design.</p>
+                <a href="#" class="btn btn-primary add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Wishes&Cards Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

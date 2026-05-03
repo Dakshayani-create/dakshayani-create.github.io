@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Greeting Cards & Wishes Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .about-section {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        .about-section h1 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+        }
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+        }
+        .about-image {
+            margin: 2rem 0;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        .about-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Wishes<span style="color: var(--text-dark);">&</span>Cards</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="cards.html">Cards</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html" style="color: var(--primary-color);">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-icons">
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="cart.html" style="color: var(--primary-color);">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Content -->
+    <main class="about-section">
+        <h1>About Us</h1>
+        <p>Welcome to Wishes & Cards, your number one platform for discovering and sending the most beautiful greeting cards and heartfelt wishes. Our mission is to help people connect and spread happiness, one card at a time.</p>
+        
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Creating greeting cards">
+        </div>
+
+        <p>Whether it's a birthday, an anniversary, a festive celebration, or simply a message of love, we believe that the right words paired with a stunning design can make anyone's day brighter. We curate high-quality designs and meaningful quotes so you can always find the perfect expression for your feelings.</p>
+        <p>Thank you for choosing Wishes & Cards to share your special moments!</p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Wishes&Cards</h3>
+                <p>Delivering smiles and heartfelt emotions through beautifully crafted greeting cards for every occasion.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul style="color: var(--text-light); line-height: 2;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cards.html">Cards</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html" style="color: var(--primary-color);">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Wishes&Cards Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

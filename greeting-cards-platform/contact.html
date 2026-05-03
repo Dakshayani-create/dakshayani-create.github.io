@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Greeting Cards & Wishes Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .contact-container {
+            max-width: 600px;
+            margin: 4rem auto;
+            padding: 3rem 2rem;
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        .contact-container h1 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        .contact-container p {
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            text-align: left;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .form-group label {
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+        .form-group input, .form-group textarea {
+            padding: 1rem;
+            border: 2px solid #eee;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            font-family: inherit;
+            transition: var(--transition);
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        .submit-btn {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: 1rem;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 1rem;
+        }
+        .submit-btn:hover {
+            background-color: #ff4757;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+        #formMessage {
+            display: none;
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            background-color: #d4edda;
+            color: #155724;
+            text-align: center;
+        }
+        .dummy-email {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+            color: var(--text-light);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Wishes<span style="color: var(--text-dark);">&</span>Cards</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="cards.html">Cards</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" style="color: var(--primary-color);">Contact</a>
+        </div>
+        <div class="nav-icons">
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="cart.html" style="color: var(--primary-color);">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Form -->
+    <main class="contact-container">
+        <h1>Contact Us</h1>
+        <p>Have a question or just want to say hi? We'd love to hear from you!</p>
+        
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <div id="formMessage">We will get back to you soon!</div>
+
+        <div class="dummy-email">
+            <p><i class="fa-solid fa-envelope"></i> Email us directly: hello@wishesandcards.com</p>
+            <p>We will get back to you soon!</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Wishes&Cards</h3>
+                <p>Delivering smiles and heartfelt emotions through beautifully crafted greeting cards for every occasion.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul style="color: var(--text-light); line-height: 2;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cards.html">Cards</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" style="color: var(--primary-color);">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Wishes&Cards Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
