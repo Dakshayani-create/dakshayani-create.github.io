@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Cards & Wishes Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Wishes<span style="color: var(--text-dark);">&</span>Cards</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="cards.html">Cards</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-icons">
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="cart.html" style="color: var(--primary-color);">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Send Beautiful Greeting Cards & Heartfelt Wishes</h1>
+            <p>Explore our curated collection of cards and thoughtful messages for birthdays, love, festivals, and all special moments in life.</p>
+            <a href="cards.html" class="btn btn-primary">Browse Cards</a>
+            <a href="blog.html" class="btn btn-outline" style="margin-left: 10px;">Read Wishes</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80&w=600" alt="Assortment of beautiful greeting cards">
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <div class="search-container">
+        <div class="search-wrapper">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search for cards (e.g. Birthday, Anniversary)...">
+            <button id="searchBtn" class="search-btn"><i class="fa-solid fa-search"></i> Search</button>
+        </div>
+    </div>
+
+    <!-- Featured Cards -->
+    <section class="section-header">
+        <h2>Featured Collections</h2>
+        <p>Discover our most popular greeting card categories</p>
+    </section>
+
+    <div class="cards-grid" id="featuredCards">
+        <!-- Card 1 -->
+        <div class="card" data-category="birthday">
+            <img src="https://images.unsplash.com/photo-1530103862676-de8892ebeea0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Birthday Card" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Happy Birthday Wishes</h3>
+                <p class="card-desc">Make their day special with our beautifully designed birthday cards full of joy.</p>
+                <a href="cards.html" class="btn btn-primary">View Collection</a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card" data-category="love">
+            <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Love Card" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Love & Romance</h3>
+                <p class="card-desc">Express your deepest feelings with our romantic cards for that special someone.</p>
+                <a href="cards.html" class="btn btn-primary">View Collection</a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card" data-category="anniversary">
+            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Anniversary Card" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Anniversary Celebrations</h3>
+                <p class="card-desc">Celebrate years of togetherness with elegant and heartfelt anniversary cards.</p>
+                <a href="cards.html" class="btn btn-primary">View Collection</a>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card" data-category="festival">
+            <img src="https://images.unsplash.com/photo-1482517967863-00e15c9b44be?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Festival Card" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Festive Greetings</h3>
+                <p class="card-desc">Spread the festive cheer with our vibrant collection of holiday cards.</p>
+                <a href="cards.html" class="btn btn-primary">View Collection</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Categories Section -->
+    <section class="home-categories">
+        <div class="section-header" style="padding-top: 0;">
+            <h2>Shop by Category</h2>
+            <p>Find exactly what you're looking for</p>
+        </div>
+        <div class="categories-grid">
+            <div class="cat-card" onclick="window.location.href='cards.html'">
+                <i class="fa-solid fa-cake-candles"></i>
+                <h3>Birthday</h3>
+            </div>
+            <div class="cat-card" onclick="window.location.href='cards.html'">
+                <i class="fa-solid fa-heart"></i>
+                <h3>Love & Romance</h3>
+            </div>
+            <div class="cat-card" onclick="window.location.href='cards.html'">
+                <i class="fa-solid fa-ring"></i>
+                <h3>Anniversary</h3>
+            </div>
+            <div class="cat-card" onclick="window.location.href='cards.html'">
+                <i class="fa-solid fa-star"></i>
+                <h3>Festivals</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Blogs Section -->
+    <section class="trending-blogs">
+        <div class="section-header" style="padding-top: 0;">
+            <h2>Trending Wishes & Guides</h2>
+            <p>Get inspired by our latest articles and message ideas</p>
+        </div>
+        <div class="blog-preview-grid">
+            <div class="blog-preview-card">
+                <img src="https://images.unsplash.com/photo-1558636508-e0db3814bd1d?q=80&w=600" alt="Birthday Wishes">
+                <div class="blog-preview-content">
+                    <h3>10 Best Birthday Wishes</h3>
+                    <p>Make their birthday unforgettable with these 10 best wishes and heartfelt messages.</p>
+                    <a href="blog1.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Read More</a>
+                </div>
+            </div>
+            <div class="blog-preview-card">
+                <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=600" alt="Anniversary Messages">
+                <div class="blog-preview-content">
+                    <h3>Romantic Messages for Anniversary</h3>
+                    <p>Express your deep love and devotion with these beautiful romantic anniversary messages.</p>
+                    <a href="blog2.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Read More</a>
+                </div>
+            </div>
+            <div class="blog-preview-card">
+                <img src="https://images.unsplash.com/photo-1494774157365-9e04c6720e47?q=80&w=600" alt="Mothers Day Messages">
+                <div class="blog-preview-content">
+                    <h3>Heart touching Mother's Day Messages</h3>
+                    <p>Show your mom how much she means to you with these heart-touching messages.</p>
+                    <a href="blog4.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="blog.html" class="btn btn-primary">View All Posts</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-header" style="padding-top: 0;">
+            <h2>What Our Customers Say</h2>
+            <p>Join thousands of happy people spreading joy</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <i class="fa-solid fa-quote-left"></i>
+                <p class="testimonial-text">"The designs are absolutely stunning! I bought an anniversary card for my husband and he loved it so much. Fast and easy experience."</p>
+                <div class="testimonial-author">Sarah Jenkins</div>
+                <div class="testimonial-stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fa-solid fa-quote-left"></i>
+                <p class="testimonial-text">"I love the blog section! It helped me figure out exactly what to write in my best friend's birthday card. Highly recommend this platform!"</p>
+                <div class="testimonial-author">Michael T.</div>
+                <div class="testimonial-stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fa-solid fa-quote-left"></i>
+                <p class="testimonial-text">"Premium quality all around. The website is so easy to navigate, and the cart system is seamless. Beautiful gradients and UI!"</p>
+                <div class="testimonial-author">Emily R.</div>
+                <div class="testimonial-stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action Banner -->
+    <section class="cta-banner">
+        <h2>Ready to Spread Some Happiness?</h2>
+        <p>Explore our premium collection of over 500+ handcrafted greeting cards for every special occasion in life.</p>
+        <a href="cards.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2.5rem;">Shop Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Wishes&Cards</h3>
+                <p>Delivering smiles and heartfelt emotions through beautifully crafted greeting cards for every occasion.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul style="color: var(--text-light); line-height: 2;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cards.html">Cards</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Wishes&Cards Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
